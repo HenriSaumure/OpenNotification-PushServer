@@ -1,19 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.PushServer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Use system colors that follow phone theme -->
-        <item name="colorPrimary">@android:color/system_accent1_500</item>
-        <item name="colorPrimaryVariant">@android:color/system_accent1_700</item>
-        <item name="colorOnPrimary">@android:color/system_neutral1_0</item>
+        <!-- Use compatible colors for older Android versions -->
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@android:color/system_accent2_500</item>
-        <item name="colorSecondaryVariant">@android:color/system_accent2_700</item>
-        <item name="colorOnSecondary">@android:color/system_neutral1_900</item>
-        <!-- Status bar color - transparent to show system -->
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <!-- Enable edge-to-edge -->
-        <item name="android:windowTranslucentStatus">false</item>
-        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="colorSecondary">#03DAC6</item>
+        <item name="colorSecondaryVariant">#018786</item>
+        <item name="colorOnSecondary">#000000</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Remove edge-to-edge for older devices -->
     </style>
 </resources>
